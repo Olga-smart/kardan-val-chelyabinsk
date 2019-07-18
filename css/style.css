@@ -1,0 +1,83 @@
+/* General */
+:root {
+	--blue: #2f22de;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+}
+/* End General */
+
+/* Navbar */
+.navbar {
+	background-color: transparent;
+}
+/* End Navbar */
+.navbar {
+	background: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0));
+	background-color: rgba(255,255,255,0.2);
+}
+.navbar .navbar-brand small {
+	display: block;
+	text-transform: uppercase;
+	opacity: 0.5;
+	letter-spacing: 1px;
+}
+/* Header */
+header {
+	background:
+		url(../img/cardan.png),
+		linear-gradient(to right, var(--gray) 50%, var(--yellow) 50%);
+	background-position: center top 30vh, top;
+	background-repeat: no-repeat;
+	background-size: 70%, 100%;
+	height: 100vh;
+}
+header .row:first-child {
+	margin-top: 10vh;
+}
+header h1 {
+	color: #fff;
+}
+header small {
+	display: block;
+	font-weight: 300;
+}
+header h1 span {
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	font-size: 130%;
+	color: var(--yellow);
+}
+header .btn {
+	background-color: var(--blue);
+	color: #fff;
+	margin-top: 25vh;
+	border-radius: 0;
+}
+header .header-benefit {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 30px;
+	opacity: 0.8;
+	font-size: 0.9rem;
+}
+header .header-benefit-1 {
+	background-image: url(../img/new.png);
+}
+header .header-benefit-2 {
+	background-image: url(../img/technology.png);
+}
+header .header-benefit-3 {
+	background-image: url(../img/machine.png);
+}
+header .header-benefit-4 {
+	background-image: url(../img/guarantee.png);
+}
+/* End Header */
