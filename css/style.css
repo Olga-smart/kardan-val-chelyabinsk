@@ -14,12 +14,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Navbar */
 .navbar {
 	background-color: rgba(255,255,255,0.2);
-	background-color: rgba(255,255,255,0.4);
-	background-color: transparent;
+	background-color: rgba(255,255,255);
+/*	background-color: transparent;*/
 	font-family: 'Oswald', sans-serif;
 }
 .navbar .navbar-brand {
-	color: #fff;
+/*	color: #fff;*/
 }
 .navbar .navbar-brand small {
 	display: block;
@@ -57,9 +57,9 @@ header {
 	background-position: center top 30vh, top;
 	background-repeat: no-repeat;
 	background-size: 70%, 100%;
-	height: 100vh;
+	min-height: 100vh;
 }
-header .row:first-child {
+header .main-screen-content {
 	margin-top: 10vh;
 }
 header h1 {
@@ -97,15 +97,173 @@ header .header-benefit {
 	font-size: 0.9rem;
 }
 header .header-benefit-1 {
-	background-image: url(../img/new-blue.png);
+	background-image: url(../img/new.png);
 }
 header .header-benefit-2 {
-	background-image: url(../img/technology-blue.png);
+	background-image: url(../img/technology.png);
 }
 header .header-benefit-3 {
-	background-image: url(../img/machine-blue.png);
+	background-image: url(../img/machine.png);
 }
 header .header-benefit-4 {
-	background-image: url(../img/guarantee-blue.png);
+	background-image: url(../img/guarantee.png);
 }
 /* End Header */
+
+/* Media Header */
+@media (min-width: 992px) and (max-width: 1199px) {
+	header {
+		background-position: center top 35vh, top;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	header {
+		background-position: center top 45vh, top;
+		background-size: 55%, 100%;
+	}	
+}
+@media (min-width: 768px) and (max-width: 991px) and (max-height: 530px) {
+	header {
+		background-position: center top 50vh, top;
+	}
+	header .btn {
+		margin-top: 20vh;
+	}
+	header .header-benefit {
+		font-size: 0.8rem;
+		background-size: 20px;
+		padding-top: 25px;
+		padding-bottom: 10px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) and (max-height: 430px) {
+	header {
+		background-position: center top 55vh, top;
+	}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+	header {
+		background-position: center top 270px, top;
+	}
+	header .main-screen-content {
+		margin-top: 5vh;
+	}
+	header .btn {
+		margin-top: 15vh;
+	}
+	header .header-benefit {
+		padding-top: 35px;
+		padding-bottom: 15px;
+		background-size: 30px;
+		font-size: 0.8rem;
+	}
+}
+@media (min-width: 576px) and (max-width: 767px) and (max-height: 640px) {
+	header {
+		background-position: center top 45vh, top;
+	}
+}
+@media (min-width: 576px) and (max-width: 767px) and (max-height: 550px) {
+	header {
+		background-position: center top 50vh, top;
+	}
+}
+@media (min-width: 576px) and (max-width: 767px) and (max-height: 490px) {
+	header {
+		background-position: center top 55vh, top;
+	}
+}
+@media (min-width: 576px) and (max-width: 767px) and (max-height: 440px) {
+	header {
+		background-position: center top 55vh, top;
+		background-size: 60%, 100%;
+	}
+}
+@media (min-width: 576px) and (max-width: 767px) and (max-height: 400px) {
+	header {
+		background-position: center top 55vh, top;
+		background-size: 55%, 100%;
+	}
+	header h1 {
+		font-size: 2rem;
+	}
+	header .header-benefit {
+		font-size: 0.7rem;
+	}
+}
+@media (min-width: 576px) and (max-width: 767px) and (max-height: 370px) {
+	header {
+		background-position: center top 55vh, top;
+		background-size: 50%, 100%;
+	}
+	header .main-screen-content {
+		margin-top: 0;
+	}
+	header .btn {
+		font-size: 0.8rem;
+	}
+}
+@media (min-width: 576px) and (max-width: 767px) and (max-height: 350px) {
+	header {
+		background-position: center top 60vh, top;
+		background-size: 40%, 100%;
+	}
+	header .btn {
+		margin-top: 10vh;
+	}
+}
+@media (min-width: 576px) and (max-width: 767px) and (max-height: 320px) {
+	header {
+		background-position: center top 50vh, top;
+	}
+	header .header-benefits-wrapper .col-6:nth-child(3),
+	header .header-benefits-wrapper .col-6:nth-child(4) {
+		margin-left: 50%;
+	}
+	header .header-benefit {
+		padding-top: 30px;
+		padding-bottom: 10px;
+		background-size: 25px;
+	}
+	header .btn {
+		margin-top: 0;
+	}
+}
+@media (max-width: 575px) {
+	header {
+		background-position: center top 210px, top;
+	}
+	header .main-screen-content {
+		margin-top: 0;
+	}
+	header h1,
+	header h1 span {
+		color: #212529;
+	}
+	header .btn {
+		margin-top: 10vh;
+		margin-bottom: 10vh;
+	}
+	header .header-benefit {
+		opacity: 1;
+		background-size: 30px;
+	}
+	header .header-benefit-1 {
+		background-image: url(../img/new-blue.png);
+	}
+	header .header-benefit-2 {
+		background-image: url(../img/technology-blue.png);
+	}
+	header .header-benefit-3 {
+		background-image: url(../img/machine-blue.png);
+	}
+	header .header-benefit-4 {
+		background-image: url(../img/guarantee-blue.png);
+	}
+}
+@media (max-width: 350px) {
+	header {
+		background-position: center top 270px, top;
+	}
+}
+/* End Media Header */
