@@ -259,18 +259,6 @@ header .header-benefit-4 {
 		opacity: 1;
 		background-size: 30px;
 	}
-	header .header-benefit-1 {
-		background-image: url(../img/new-blue.png);
-	}
-	header .header-benefit-2 {
-		background-image: url(../img/technology-blue.png);
-	}
-	header .header-benefit-3 {
-		background-image: url(../img/machine-blue.png);
-	}
-	header .header-benefit-4 {
-		background-image: url(../img/guarantee-blue.png);
-	}
 }
 @media (max-width: 350px) {
 	header {
@@ -283,33 +271,148 @@ header .header-benefit-4 {
 .benefits-item {
 	background-repeat: no-repeat;
 	background-position: top left;
-	background-size: 30px;
-	padding-left: 40px;
+	background-size: 40px;
+	padding-left: 60px;
 	margin-bottom: 3rem;
 }
 .benefits-item-1 {
-	background-image: url(../img/speed.png);
+	background-image: url(../img/benefits-1.png);
 }
 .benefits-item-2 {
-	background-image: url(../img/laser.png);
+	background-image: url(../img/benefits-2.png);
 }
 .benefits-item-3 {
-	background-image: url(../img/competence.png);
+	background-image: url(../img/benefits-3.png);
 }
 .benefits-item-4 {
-	background-image: url(../img/guarantee1.png);
+	background-image: url(../img/benefits-4.png);
 }
 .benefits-item-5 {
-	background-image: url(../img/help.png);
+	background-image: url(../img/benefits-5.png);
 }
 .benefits-item-6 {
-	background-image: url(../img/7days.png);
+	background-image: url(../img/benefits-6.png);
+}
+.benefits-item-heading {
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 40px;
+	position: relative;
+}
+.benefits-item-heading:after {
+position: absolute;
+	content: "";
+	display: block;
+	height: 1px;
+	width: calc(100% + 40px);
+	background-color: var(--blue);
+	bottom: 0;
+	left: -40px;
+}
+.benefits-item-description {
+	font-size: 0.9rem;
+	color: var(--gray);
 }
 /* End Benefits */
 
 /* Stages */
-
+.stages .timeline {
+	position: relative;
+	counter-reset: myCounter;
+}
+.stages .timeline:before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 1px;
+	height: 100%;
+	background-color: #d6d7d7;
+	top: 0;
+	left: 2rem;
+}
+.stages .stages-item-wrapper {
+	margin-bottom: 3rem;
+	padding-left: 4rem;
+}
+.stages .stages-item-wrapper:last-child {
+	margin-bottom: 0;
+}
+.stages .stages-item {
+	position: relative;
+	border: 1px solid #d6d7d7;
+	padding: .825rem;
+	padding-top: 2rem;
+	border-bottom-left-radius: 0.25rem;
+	border-bottom-right-radius: 0.25rem;
+/*	background-color: var(--light);*/
+}
+.stages .stages-item:before {
+	counter-increment: myCounter;
+	content: counter(myCounter);
+	position: absolute;
+	display: block;
+	width: 2rem;
+	height: 2rem;
+	background-color: var(--blue);
+	color: #fff;
+	font-weight: 600;
+/*	border-radius: 50%;*/
+	left: -3rem;
+	top: -1px;
+	text-align: center;
+	line-height: 2rem;
+}
+.stages .stages-item:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: calc(2rem + 100% + 1px);
+	height: 2rem;
+	border-top: 1px solid var(--blue);
+	left: -2rem;
+	top: -1px;
+}
+.stages .stages-item .duration {
+	position: absolute;
+	display: block;
+	top: 0;
+	right: 0;
+	padding: 0.5rem 1rem;
+/*	border-bottom-left-radius: 0.25rem;*/
+/*	background-color: var(--yellow);*/
+	color: var(--secondary);
+	font-style: italic;
+	font-size: 0.8rem;
+}
 /* End Stages */
+
+/* Media Stages (Mobile First) */
+@media (min-width: 576px) {
+	.stages .timeline:before {
+		left: 50%;
+	}
+	.stages .stages-item-wrapper:nth-child(odd) {
+		padding-right: 2rem;
+		padding-left: 15px;
+	}
+	.stages .stages-item-wrapper:nth-child(even) {
+		padding-left: 2rem;
+		margin-left: 50%;
+/*		margin-top: -2rem;*/
+	}
+	.stages .stages-item-wrapper:nth-child(2n+3) {
+/*		margin-top: -2rem;*/
+	}
+	.stages .stages-item-wrapper:nth-child(odd) .stages-item:before {
+		right: -3.1rem;
+		left: unset;
+	}
+	.stages .stages-item-wrapper:nth-child(odd) .stages-item:after {
+		left: unset;
+		right: -2rem;
+	}
+}
+/* End Media Stages (Mobile First) */
 
 /* Price */
 .price-item {
