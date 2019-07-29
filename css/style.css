@@ -344,7 +344,6 @@ position: absolute;
 	padding-top: 2rem;
 	border-bottom-left-radius: 0.25rem;
 	border-bottom-right-radius: 0.25rem;
-/*	background-color: var(--light);*/
 }
 .stages .stages-item:before {
 	counter-increment: myCounter;
@@ -356,7 +355,6 @@ position: absolute;
 	background-color: var(--blue);
 	color: #fff;
 	font-weight: 600;
-/*	border-radius: 50%;*/
 	left: -3rem;
 	top: -1px;
 	text-align: center;
@@ -378,8 +376,6 @@ position: absolute;
 	top: 0;
 	right: 0;
 	padding: 0.5rem 1rem;
-/*	border-bottom-left-radius: 0.25rem;*/
-/*	background-color: var(--yellow);*/
 	color: var(--secondary);
 	font-style: italic;
 	font-size: 0.8rem;
@@ -430,4 +426,20 @@ position: absolute;
 .price-item-3 {
 	background-image: url(../img/truck.png);
 }
+.price-clarification {
+	margin-top: 4rem;
+	font-size: 0.7rem;
+	color: var(--secondary);
+}
 /* End Price */
+
+/* Media Price */
+@media (max-width: 767px) {
+	.price-item {
+		background-position: center left;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 60px
+	}
+}
+/* End Media Price */
