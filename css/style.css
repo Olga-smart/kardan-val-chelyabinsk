@@ -10,7 +10,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Oswald', sans-serif;
 }
-section {
+section, footer {
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 }
@@ -443,3 +443,44 @@ position: absolute;
 	}
 }
 /* End Media Price */
+
+/* Footer */
+footer {
+	background-color: var(--gray-dark);
+	color: #fff;
+}
+footer .footer-item {
+	padding-top: 35px;
+	background-size: 25px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: relative;
+}
+footer a {
+	color: #fff;
+}
+footer a:hover {
+	color: var(--yellow);
+}
+footer p {
+	margin: 0;
+	padding: 0;
+}
+footer .adress {
+	background-image: url(../img/address.png);
+}
+footer .tel {
+	background-image: url(../img/tel.png);
+}
+footer .mail {
+	background-image: url(../img/mail.png);
+}
+/* End Footer */
+
+/* Media Footer */
+@media (max-width: 767px) {
+	footer .footer-item {
+		margin-bottom: 3rem 
+	}
+}
+/* End Media Footer */
