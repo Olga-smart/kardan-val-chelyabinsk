@@ -121,16 +121,16 @@ header .header-benefit {
 	font-size: 0.9rem;
 }
 header .header-benefit-1 {
-	background-image: url(../img/new.png);
+	background-image: url(../img/header-new.png);
 }
 header .header-benefit-2 {
-	background-image: url(../img/technology.png);
+	background-image: url(../img/header-technology.png);
 }
 header .header-benefit-3 {
-	background-image: url(../img/machine.png);
+	background-image: url(../img/header-machine.png);
 }
 header .header-benefit-4 {
-	background-image: url(../img/guarantee.png);
+	background-image: url(../img/header-guarantee.png);
 }
 /* End Header */
 
@@ -431,13 +431,13 @@ position: absolute;
 	padding-top: 50px;
 }
 .price-item-1 {
-	background-image: url(../img/car.png);
+	background-image: url(../img/price-car.png);
 }
 .price-item-2 {
-	background-image: url(../img/minibus.png);
+	background-image: url(../img/price-minibus.png);
 }
 .price-item-3 {
-	background-image: url(../img/truck.png);
+	background-image: url(../img/price-truck.png);
 }
 .price-clarification {
 	margin-top: 4rem;
@@ -480,13 +480,13 @@ footer p {
 	padding: 0;
 }
 footer .adress {
-	background-image: url(../img/address.png);
+	background-image: url(../img/footer-address.png);
 }
 footer .tel {
-	background-image: url(../img/tel.png);
+	background-image: url(../img/footer-tel.png);
 }
 footer .mail {
-	background-image: url(../img/mail.png);
+	background-image: url(../img/footer-mail.png);
 }
 /* End Footer */
 
@@ -497,3 +497,48 @@ footer .mail {
 	}
 }
 /* End Media Footer */
+
+/* Posts List */
+.posts-list {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+.posts-list .card {
+	text-decoration: none;
+}
+.posts-list .card h2 {
+	color: #212529;
+	font-size: 1.5rem;
+}
+.posts-list .card:hover h2 {
+	color: var(--blue);
+}
+.posts-list .pagination {
+	margin-top: 4rem;
+}
+.posts-list .pagination a {
+	color: var(--blue);
+}
+.posts-list .pagination a:hover {
+	color: #fff;
+	background-color: var(--blue);
+}
+/* End Posts List */
+
+/* Media Posts List */
+@media (min-width: 576px) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }	
+}
+@media (min-width: 768px) {
+  .card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }	
+}
+
+/* End Media Posts List */
