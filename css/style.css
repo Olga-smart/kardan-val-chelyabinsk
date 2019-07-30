@@ -3,6 +3,9 @@
 	--blue: #2f22de;
 	--blue-dark: #271cba;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: 'Roboto', sans-serif;
 	overflow-x: hidden;
@@ -540,5 +543,95 @@ footer .mail {
     column-count: 3;
   }	
 }
-
 /* End Media Posts List */
+
+/* Post Page */
+.post-page {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+.post-page article img {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.post-page aside {
+	padding-top: 10rem;
+}
+.post-page .more-reading .section-heading {
+	font-size: 1.5rem;
+	font-family: 'Oswald', sans-serif;
+}
+.post-page .more-reading .card {
+	margin-bottom: 2rem;
+}
+/* End Post Page */
+
+/* Media Post Page */
+@media (max-width: 991px) {
+	.post-page aside {
+		padding-top: 1rem;
+	}
+}
+/* End Media Post Page */
+
+/* Banner1 */
+.banner1 {
+	background-image: url(../img/banner1.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	background-color: #f9d751;
+	min-height: 400px;
+	padding: 1rem;
+	padding-top: 70%;
+	padding-bottom: 2rem;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(96,96,96,0.5);
+}
+.banner1 .main-offer {
+	font-size: 1.5rem;
+}
+.banner1 .main-offer span {
+	font-size: 2rem;
+}
+.banner1 .btn {
+	color: #fff;
+	background-color: var(--blue);
+	border-radius: 0;
+}
+.banner1 .btn:hover {
+	background-color: var(--blue-dark);
+}
+/* End Banner1 */
+
+/* Media Banner1 */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.banner1 {
+		padding-top: 100%;
+	}
+	.banner1 .main-offer {
+		font-size: 1.3rem;
+	}
+	.banner1 .btn span {
+		display: none;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.banner1 {
+		background-image: url(../img/banner1-horizontal.jpg);
+		min-height: 200px;
+		padding-top: 1rem;
+		padding-left: 40%;
+	}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+	.banner1 {
+		padding-top: 55%;
+	}
+}
+@media (max-width: 575px) {
+	.banner1 {
+		padding-top: 60%;
+	}
+}
+/* End Media Banner1 */
